@@ -14,6 +14,7 @@ html {
 .column {
   float: left;
   width: 33.3%;
+  margin-left: 35%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -69,7 +70,7 @@ html {
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <img src="https://scontent.fdac8-1.fna.fbcdn.net/v/t1.6435-1/p320x320/155523304_3738454526250013_1493644444560966376_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeGxT14U87tlxQm4ObpjChyn_ib4qrtjt7z-Jviqu2O3vKTZOP9IAnr6KoyK3jEyAkkOY231mFoO0u_fc9IIXaJm&_nc_ohc=ABJvnyoyOhUAX86hA5w&_nc_ht=scontent.fdac8-1.fna&oh=8178e6a898a481430320172e11deed21&oe=616D6264" alt="Ayshik" style="width:100%">
       <div class="container">
         <h2>Ayshik Khan</h2>
         <p class="title">CEO & Founder</p>
@@ -80,32 +81,7 @@ html {
     </div>
   </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
+ 
 
 </body>
 </html>

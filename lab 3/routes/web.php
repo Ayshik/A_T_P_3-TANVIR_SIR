@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usercontroller;
+use App\Http\Controllers\studentcontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,5 +23,9 @@ Route::get('/', function () {
 Route::get('/',[userController::class,'home'])->name('home');
 Route::get('/products/services',[userController::class,'service'])->name('service');
 Route::get('/ourteams',[userController::class,'ourteam'])->name('ourteam');
+Route::get('/addstudent',[studentController::class,'addstudent'])->name('addstudent');
+Route::post('/addstudent',[studentController::class,'poststudent'])->name('addstudent');
+Route::get('/showstudent',[studentController::class,'showstudent'])->name('showstudent');
+Route::get('/updatestudent/{id}/{name}',[studentController::class,'update'])->name('updatestudent');
 Route::get('/aboutus',[userController::class,'aboutus'])->name('aboutus');
 Route::get('/contactus',[userController::class,'contactus'])->name('contactus');

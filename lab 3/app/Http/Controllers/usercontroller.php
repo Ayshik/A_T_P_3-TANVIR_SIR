@@ -8,24 +8,24 @@ class usercontroller extends Controller
 {
    
     public function contact(){
-        return view('contact');
+        return view('pages.contact');
     }
     public function home(){
-        return view('home');
+        return view('pages.home');
     }
     public function ourteam(){
-        return view('ourteam');
+        return view('pages.ourteam');
     }
     public function aboutus(){
-        return view('aboutus');
+        return view('pages.aboutus');
     }
     public function contactus(){
-        return view('contactus');
+        return view('pages.contactus');
     }
     public function service(){
       
         $service = array("service 1","service 2","service 3","service 4");
-        return view('service')
+        return view('pages.service')
         
         ->with('service',$service);
     }

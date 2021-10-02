@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
+@extends('layouts.body')
+@section('content')
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <style>
@@ -37,32 +37,30 @@ input[type=submit]:hover {
   padding: 20px;
 }
 </style>
-</head>
-<body>
-<a class="btn btn-primary" href="{{route('home')}}">home</a>
-<h1>Contact Us</h1>
+
+<h1>Update Student</h1>
 
 <div class="container">
   <form action="/action_page.php">
+
+  <label for="subject">Id</label>
+    <input type="text" id="id" name="id" placeholder="id" value= "{{ $student->id }}">
+
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."value= "{{ $student->name }}">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="lname">Phone No</label>
+    <input type="text" id="phone" name="phone" placeholder="Phone No."value= "{{ $student->phone }}">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+    <label for="country">Email</label>
+    <input type="text" id="email" name="email" placeholder="email"value= "{{ $student->email }}">
+   
+    <label for="country">Dob</label>
+    <input type="date" id="date" name="date" class="form-control" placeholder="date"value= "{{ $student->dob }}"><br>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+   
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Update">
   </form>
 </div>
-
-</body>
-</html>
+@endsection

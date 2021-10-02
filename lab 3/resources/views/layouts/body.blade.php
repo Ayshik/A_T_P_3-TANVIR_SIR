@@ -4,14 +4,18 @@
 
     </head>
     <body>
-   <center> <h1>This is the Service Page</h1></center>
-        <a class="btn btn-primary" href="{{route('home')}}">home</a>
-        <table>
-            @foreach($service as $n)
-            <tr><td>{{$n}}</td></tr> 
-            @endforeach
-        </table>
-        
        
+   <!-- @section('navbar')
+    @show (NOT WORKING)
+
+ @yield('navbar') NOT WORKING
+
+ @include('navbar.navinclude') Working
+-->
+@include('navbar.navinclude')
+        <div>
+            @yield('content')
+        </div>
+ 
     </body>
 </html>

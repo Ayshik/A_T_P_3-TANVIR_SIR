@@ -55,14 +55,17 @@ class studentcontroller extends Controller
 
 
         //return "Successfully added";    
-        return view('pages.studentinfo')->with('students',$students);  
+       // return view('pages.studentinfo')->with('students',$students);  
+      return redirect('/showstudent');
+     // return Redirect::back();
     }
     public function showstudent(){
         /*$students = array();
         for($i=0;$i<10;$i++){
             $student=array(
                 "name"=>"Student ".($i+1),
-                "id" =>($i+1),
+                "id" =>($i+1
+            ),
                 "dob" =>"12.12.12"
             );
             $students[] = (object)$student;

@@ -56,7 +56,7 @@ input[type=submit]:hover {
     <input type="text" id="email" name="email" placeholder="email"value= "{{ $student->email }}">
    
     <label for="country">Dob</label>
-    <input type="date" id="date" name="date" class="form-control" placeholder="date"value= "{{ $student->dob }}"><br>
+    <input type="date" id="date" name="dob" class="form-control" placeholder="date"value= "{{ $student->dob }}"><br>
 
    
 

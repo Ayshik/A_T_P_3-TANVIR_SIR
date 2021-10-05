@@ -13,6 +13,7 @@
  @include('navbar.navinclude') Working
 -->
 @include('navbar.navinclude')
+
         <div>
             @yield('content')
         </div>
